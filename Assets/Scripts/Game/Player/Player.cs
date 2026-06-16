@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [System.Serializable]
+    public struct PlayerStartPoint
+    {
+        public CoordinateDegrees coordinate;
+        public float angle;
+        [Range(0, 1)] public float elevationT;
+    }
+
     [Header("Startup Settings")]
     public bool worldIsSpherical = true;
     public Transform model;
