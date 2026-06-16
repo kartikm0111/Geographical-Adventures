@@ -24,6 +24,25 @@ public class Player : MonoBehaviour
     [Header("Locomotion")]
     public float moveSpeed = 25f;
     public float turnSpeed = 10f;
+
+    // --- Legacy Stub Variables to Fix Compilation Errors ---
+    public bool debug_lockMovement;
+    public float maxPitchAngle;
+    public float currentPitchAngle;
+    public float TargetSpeedT;
+    public float BoostRemainingT;
+    public bool BoosterIsCharging;
+    public bool IsBoosting;
+    public float SpeedT;
+    public System.Collections.Generic.List<Vector3> positionHistory = new System.Collections.Generic.List<Vector3>();
+    public float distanceTravelledKM;
+
+    public void UpdateMovementInput(Vector2 input) {}
+    public void SetPitch(float pitch) {}
+    public void SetStartPos(PlayerStartPoint pos) {}
+    public void DropPackage() {}
+    public void AddBoost(float amount) {}
+    // --------------------------------------------------------
     
     public float currentSpeed { get; private set; }
     public float currentWeightModifier = 1f;

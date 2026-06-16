@@ -10,6 +10,7 @@ public class GameCamera : MonoBehaviour
 
     [Header("Orbit Settings")]
     public float distance = 15f;
+    public bool topDownMode; // Legacy stub
     public float height = 5f;
     public float followSmoothTime = 0.1f;
     public float rotationSmoothTime = 0.1f;

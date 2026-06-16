@@ -79,6 +79,11 @@ public class UIManager : MonoBehaviour
         if (carryingGroup != null) StartCoroutine(TransitionHUD(carryingGroup, false, true));
     }
 
+    // --- Legacy Stub Methods to Fix Compilation Errors ---
+    public void TogglePause() {}
+    public void ToggleMap() {}
+    // -----------------------------------------------------
+
     IEnumerator TransitionHUD(CanvasGroup group, bool show, bool slide)
     {
         if (show) group.gameObject.SetActive(true);
